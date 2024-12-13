@@ -34,4 +34,12 @@ const perishable2 = new PerishableProductProperties('Eggs', 2.0, 6, '2024-11-30'
 console.log(perishable1.toString());
 console.log(perishable2.toString());
 
-
+class ProductProperties {
+  
+    static applyDiscount(products, discount) {
+      products.forEach(product => {
+        product.price -= product.price * discount;
+       });
+    }
+}
+  
