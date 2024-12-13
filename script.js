@@ -29,3 +29,9 @@ class PerishableProductProperties extends ProductProperties {
     }
 }
 
+const perishable1 = new PerishableProductProperties('Milk', 1.5, 10, '2024-12-31');
+const perishable2 = new PerishableProductProperties('Eggs', 2.0, 6, '2024-11-30');
+console.log(perishable1.toString());
+console.log(perishable2.toString());
+
+
